@@ -33,7 +33,7 @@ class Solution:
       # Get the highest point in the height
       copy = sorted(height, reverse=True)
       high = min(copy[0], copy[1])
-      highest = max(height)
+      highest = copy[0]
       highest_index = height.index(highest)
       height[highest_index] = high
 
