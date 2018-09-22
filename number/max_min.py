@@ -1,16 +1,14 @@
-
 def maxMin(k, arr):
-  arr = sorted(arr)
-  smallest = arr[-1]
-  
-  for i in range(len(arr) - (k - 1)):
-    minimum = arr[i]
-    maximum = arr[i + k - 1]
-    difference = maximum - minimum
-    smallest = min(difference, smallest)
+  arr.sort()
+  lowest_distance = arr[-1]
 
-    if smallest == 0:
-      return (smallest)
+  for index in range(len(arr) - k + 1):
+    temp_distance = arr[index + k - 1] - arr[index]
+    
+    if temp_distance < lowest_distance:
+      lowest_distance = temp_distance
+      if lowest_distance == 0:
+        return (0)
   
-  return (smallest)
+  return (lowest_distance)
   
