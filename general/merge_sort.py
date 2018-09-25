@@ -20,14 +20,3 @@ def mergesort(array):
     result.extend(mergesort(right))
 
   return (result)
-
-
-temp = [1, 3, 2, 6, 4, 3, 9, 2, 5]
-temp2 = ["b", "d", "k", "c", "z", "a"]
-
-
-new = mergesort(temp)
-print(new)
-
-new2 = mergesort(temp2)
-print(new2)
