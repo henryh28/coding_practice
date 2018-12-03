@@ -4,10 +4,20 @@ static int diagonalDifference(int[][] arr) {
     int right = 0;
 
     for (int i = 0; i < arr.length; i++) {
-        System.out.print(arr[i][i]);
         left += arr[i][i];
         right += arr[i][arr.length - (1 + i)];
     }
 
     return (Math.abs(left - right));
 }
+
+
+// =============== A python solution =============
+def diagonalDifference(arr):
+    left, right = 0, 0
+
+    for i in range(len(arr)):
+        left += arr[i][i]
+        right += arr[i][-(1 + i)]
+    
+    return abs(left - right)
