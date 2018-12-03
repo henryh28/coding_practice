@@ -1,6 +1,5 @@
 // Complete the staircase function below (done with string builder).
 static void staircase(int n) {
-
     StringBuilder filler = new StringBuilder();
 
     for (int i = 0; i < n; i++) {
@@ -15,7 +14,6 @@ static void staircase(int n) {
 
 // Complete the staircase function below. (done with array)
 static void staircase(int n) {
-
     char[] line = new char[n];
     Arrays.fill(line, ' ');
 
@@ -24,3 +22,8 @@ static void staircase(int n) {
         System.out.println(line);
     }
 }
+
+// ================= A Python solution ================
+def staircase(n):
+  for i in range(n):
+    print (" " * ((n - 1) - i) + ((i + 1) * "#"))
