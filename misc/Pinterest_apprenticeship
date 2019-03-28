@@ -1,0 +1,31 @@
+def findLongestRepeatedLetters(lines):
+  for line in lines:
+    # Processing new line
+    longest, current = 1, 1
+
+    for reverse_index in range(len(line) - 1, -1, -1):
+      # Iterating over current line from back to front
+      current_letter = line[reverse_index]
+      
+      if reverse_index == len(line) - 1:
+        # Last letter of current line
+        prev_letter = current_letter
+        order = current_letter
+      else:
+        # Subsequent letters in front of last letter
+        if current_letter == prev_letter:
+          # A match. Previous letter == current letter
+          current += 1
+          if current > longest:
+            longest = current
+            order = current_letter
+          elif current == longest:
+            order = min(order, current_letter)
+        else:
+          # Match streak ended. Set current letter as start of new streak
+          current = 1
+          prev_letter = current_letter
+          
+          if current == longest:
+            order = min(order, current_letter)
+    print ("{} {}".format(order, longest))
