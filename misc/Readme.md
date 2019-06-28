@@ -4,7 +4,7 @@
 **How to run the application:**
 - Program was written and tested using Python 3.7.3.
 - Program requires only Python standard library and does not require the installation of dependcies.
-- To run the program, type in '''"py report_cards.py"'''.  Program will display a prompt upon successful program execution
+- To run the program, type in ```py report_cards.py```.  Program will display a prompt upon successful program execution
 - The report cards will be written to 'report_cards.txt' in plain text format and saved in the program directory.
 
 **Program Overview**
