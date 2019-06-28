@@ -12,5 +12,6 @@
 - To function, the program requires school supplied CSV (Comma Separated Value) text files which contain information on students, courses, tests, and student test scores.
 - The CSV files required are: *'courses.csv'*, *'marks.csv'*, *'students.csv'*, and *'tests.csv'*; Please contact your IT department if you do not have these files in the program directory or you encounter any issues with running the program.
 
-*(Version 1.0. Last updated 6/28/19)*
 *(Author: Henry Hsu. email: h_hsu817@yahoo.com)*
+
+*(Version 1.0. Last updated 6/28/19)*
